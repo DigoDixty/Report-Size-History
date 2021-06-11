@@ -9,10 +9,7 @@ SELECT
      C.oid
     ,N.nspname AS schemaname
     ,C.relname AS tablename_orig
-    ,CASE WHEN relname LIKE '%1_prt%' 
-          THEN SUBSTRING(relname, 0, position('1_prt' IN relname) -1 ) 
-          ELSE tablename 
-          END tablename
+    ,sr_prt.tablename AS tablename
     ,partitionrangeend
     ,st.statime AS created
     ,reloptions
@@ -28,13 +25,13 @@ INNER JOIN (    SELECT *
                 WHERE 1 = 1
                 AND partitionrangeend < NOW() - INTERVAL '6 months'
                 AND partitionisdefault <> 't'
-                AND schemaname IN ('adhoc')
+                -- AND schemaname IN ('adhoc') -- CHANGE FOR ALL SCHEMAS
                 ORDER BY partitionrangeend DESC
             ) sr_prt
 ON N.nspname =  sr_prt.schemaname
 AND C.relname =  sr_prt.partitiontablename
 
-LEFT JOIN pg_stat_operations st -- get when the object was created
+LEFT JOIN pg_stat_operations st -- GET WHEN THE OBJECT WAS CREATED
 ON st.objname = sr_prt.partitiontablename
 AND st.schemaname = N.nspname
 AND st.actionname = 'CREATE'
