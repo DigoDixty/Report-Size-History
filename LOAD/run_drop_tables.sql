@@ -1,0 +1,8 @@
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));
+-- ALTER TABLE aux.dw_d_icc_vero_elegibilidade DROP PARTITION FOR (RANK(188));

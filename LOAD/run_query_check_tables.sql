@@ -1,0 +1,7 @@
+--UPDATE admin.tb_drop_check SET info = 'DONE', count_rows = (SELECT 1 FROM aux.dw_d_spr_dump_1_prt_r981827781 LIMIT 1), dt_colected = now() WHERE schemaname = 'aux' and tablename_orig = 'dw_d_spr_dump_1_prt_r981827781';
+--UPDATE admin.tb_drop_check SET info = 'DONE', count_rows = (SELECT 1 FROM aux.dw_d_spr_dump_1_prt_r222529319 LIMIT 1), dt_colected = now() WHERE schemaname = 'aux' and tablename_orig = 'dw_d_spr_dump_1_prt_r222529319';
+--UPDATE admin.tb_drop_check SET info = 'DONE', count_rows = (SELECT 1 FROM aux.dw_d_spr_dump_1_prt_r222529319 LIMIT 1), dt_colected = now() WHERE schemaname = 'aux' and tablename_orig = 'dw_d_spr_dump_1_prt_r222529319';
+--UPDATE admin.tb_drop_check SET info = 'DONE', count_rows = (SELECT 1 FROM aux.dw_d_spr_dump_1_prt_r222529319 LIMIT 1), dt_colected = now() WHERE schemaname = 'aux' and tablename_orig = 'dw_d_spr_dump_1_prt_r222529319';
+--UPDATE admin.tb_drop_check SET info = 'DONE', count_rows = (SELECT 1 FROM aux.dw_d_spr_dump_1_prt_r222529319 LIMIT 1), dt_colected = now() WHERE schemaname = 'aux' and tablename_orig = 'dw_d_spr_dump_1_prt_r222529319';
+--UPDATE admin.tb_drop_check SET info = 'DONE', count_rows = (SELECT 1 FROM aux.dw_d_spr_dump_1_prt_r222529319 LIMIT 1), dt_colected = now() WHERE schemaname = 'aux' and tablename_orig = 'dw_d_spr_dump_1_prt_r222529319';
+--UPDATE admin.tb_drop_check SET info = 'DONE', count_rows = (SELECT 1 FROM aux.dw_d_spr_dump_1_prt_r222529319 LIMIT 1), dt_colected = now() WHERE schemaname = 'aux' and tablename_orig = 'dw_d_spr_dump_1_prt_r222529319';
