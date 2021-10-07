@@ -3,7 +3,7 @@
 ---- == ---- == ---- == ---- == ---- == ---- == ---- == ---- ==
 INSERT INTO admin.size_tables_hist
 
-(oid, schemaname, tablename_orig, tablename, partitionrangeend, dt_obj_created, reloptions, active)
+(oid, schemaname, tablename_orig, tablename, partitionrange, dt_obj_created, reloptions, active)
 
 SELECT   
      C.oid
@@ -25,7 +25,7 @@ INNER JOIN (    SELECT *
                 WHERE 1 = 1
                 AND partitionrangeend < NOW() - INTERVAL '6 months'
                 AND partitionisdefault <> 't'
-                -- AND schemaname IN ('adhoc') -- CHANGE FOR ALL SCHEMAS
+                AND schemaname IN ('adhoc', 'aux', 'fact', 'reports') -- CHANGE FOR ALL SCHEMAS
                 ORDER BY partitionrangeend DESC
             ) sr_prt
 ON N.nspname =  sr_prt.schemaname

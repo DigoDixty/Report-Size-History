@@ -4,3 +4,4 @@ ADHOC/script_select_cmds.sql
 ADHOC/select_list_tables.sql
 ADHOC/report01.sql
 ADHOC/report02_most_huge_tables.sql
+ADHOC/fn_ins_data_other.sql
